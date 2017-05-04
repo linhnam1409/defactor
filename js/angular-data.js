@@ -2,13 +2,13 @@ var app = angular.module("app",[]);
 app.controller("controller",function($scope){
 	$scope.navs = [
 		{"navTitle":"About","navDep1s":[
-			{"depTitle":"Nobland CEO 인사말","depUrl":"#"},
-			{"depTitle":"Noble Industry CEO 인사말","depUrl":"#"},
-			{"depTitle":"연혁","depUrl":"#"},
-			{"depTitle":"비전","depUrl":"#"},
-			{"depTitle":"조직도","depUrl":"#"},
-			{"depTitle":"해외법인","depUrl":"#"},
-			{"depTitle":"오시는 길","depUrl":"#"}
+			{"depTitle":"Nobland CEO 인사말","depUrl":"#about1"},
+			{"depTitle":"Noble Industry CEO 인사말","depUrl":"#about2"},
+			{"depTitle":"연혁","depUrl":"#about3"},
+			{"depTitle":"비전","depUrl":"#about4"},
+			{"depTitle":"조직도","depUrl":"#about5"},
+			{"depTitle":"해외법인","depUrl":"#about6"},
+			{"depTitle":"오시는 길","depUrl":"#about7"}
 		]},
 		{"navTitle":"Customers","navDep1s":[
 			{"depTitle":"Designers Brands","depUrl":"#"},

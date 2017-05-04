@@ -77,8 +77,8 @@ if touchScroll is false - update index
 			sectionName: "section-name",
 			interstitialSection: "",
 			easing: "easeOutExpo",
-			scrollSpeed: 1100,
-			offset : 0,
+			scrollSpeed: 500,
+			offset : -96,
 			scrollbars: true,
 			target:"html,body",
 			standardScrollElements: false,
@@ -643,7 +643,9 @@ if touchScroll is false - update index
 					if(i>0) {
 						heights[i] = parseInt($this.offset().top) + settings.offset;
 					} else {
-						heights[i] = parseInt($this.offset().top);
+						/* Nam: block set offset top */
+						/*heights[i] = parseInt($this.offset().top);*/
+						heights[i] = 0;
 					}
 					if(settings.sectionName && $this.data(settings.sectionName)) {
 						names[i] = "#" + $this.data(settings.sectionName).toString().replace(/ /g,"-");

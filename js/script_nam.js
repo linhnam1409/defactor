@@ -1,22 +1,16 @@
 $(function(){
-	/* slide Parallax */
-	fnSlideParallax();
+	/* set min-height for section */
+	fnSetMinHeightSection();
+	fnScrollSection();
+	setTimeout(function(){fnCheckCurrentSection();},1);
 
 	/* tabs */
 	fnChangeTabs();
 });
 
-/* slide Parallax */
-function fnSlideParallax(){
-	$('#content .mainCnt').fullpage({
-		scrollOverflow: true
-	});
-}
-
-/***************** used for making manual section navigation (don't use anymore) *****************/
 function fnSetSectionNav(url){
 	var navLength = $("#content .mainCnt .section").length;
-	var wrapNav = $("#content #sectionNav ul");
+	var wrapNav = $("#content .sectionNav ul");
 	var navBtn = "";
 	for(var i = 0; i<navLength ; i++){
 		navBtn += "<li><a href='#"+ url + (i+1) +"'></a></li>";
@@ -25,7 +19,7 @@ function fnSetSectionNav(url){
 }
 
 /*function fnClickSectionNav(e){
-	$("#content #sectionNav ul li a").removeClass("active");
+	$("#content .sectionNav ul li a").removeClass("active");
 	$(this).addClass("active");
 }*/
 
@@ -49,26 +43,19 @@ function fnCheckCurrentSection(){
 	var linit = "";
 	$(".section").each(function(i,e){
 		if(i==0 && curPosition<+$(this).attr("data-scroll-position")){
-			$("#content #sectionNav ul li a").removeClass("active");
-			$("#content #sectionNav ul li").eq(i).find("a").addClass("active");
+			$("#content .sectionNav ul li a").removeClass("active");
+			$("#content .sectionNav ul li").eq(i).find("a").addClass("active");
 			return;
 		}
 		if(curPosition>=+$(this).attr("data-scroll-position") && curPosition<+$(".section").eq(i+1).attr("data-scroll-position")){
-			$("#content #sectionNav ul li a").removeClass("active");
-			$("#content #sectionNav ul li").eq(i+1).find("a").addClass("active");
+			$("#content .sectionNav ul li a").removeClass("active");
+			$("#content .sectionNav ul li").eq(i+1).find("a").addClass("active");
 			return;
 		}
 	});
 }
 
-function fnSetMinHeightSection(){
-	var wh = $(window).height();
-	$("#content .mainCnt .section").css({"min-height":wh});
-}
 
-/***************** used for making manual section navigation (don't use anymore):E *****************/
-
-/* show sub navigation */
 function fnShowSubNav(e){
 	var isActive = false;
 	if ($(e).parent().hasClass("active")){
@@ -83,6 +70,11 @@ function fnShowSubNav(e){
 	if (!isActive) {
 		$(e).parent().addClass("active");
 	}
+}
+
+function fnSetMinHeightSection(){
+	var wh = $(window).height();
+	$("#content .mainCnt .section").css({"min-height":wh});
 }
 
 /* tabs */

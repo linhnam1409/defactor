@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {margin: 0; padding: 0; font-family: NanumGothic;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {margin: 0; padding: 0; font-family: NanumGothic; color: #222;}
 div, ul, li {box-sizing: border-box;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
 body {line-height: 1; }
@@ -6,7 +6,7 @@ ol, ul {list-style: none; }
 blockquote, q {quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; }
 table {border-collapse: collapse; border-spacing: 0; }
-a {text-decoration: none; cursor: pointer; font-family: NanumGothic;}
+a {text-decoration: none; cursor: pointer; font-family: NanumGothic; color: #222;}
 label, button {cursor: pointer; font-family: NanumGothic;}
 
 @font-face{

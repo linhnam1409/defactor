@@ -10,14 +10,8 @@
 	<link rel="stylesheet" href="../css/style.css">
 	
 	<script src="../js/jquery-1.11.3.min.js"></script>
-	<script src="../js/jquery-ui.js"></script>
-	<script src="../js/angular.js"></script>
-	<script src="../js/angular-data.js"></script>
-	<script src="../js/parallax/jquery.scrollify.js"></script>
-	<script src="../js/parallax/main.js"></script>
-	<script src="../js/header.js"></script>
-	<script src="../js/footer.js"></script>
-	<script src="../js/script.js"></script>
+	<script src="../js/library.js"></script>
+	<script>insertLib();</script>
 </head>
 <body ng-app="app">
 <div class="global" ng-controller="controller">
@@ -40,7 +34,7 @@
 			</ul>
 		</div>
 
-		<div class="sectionNav">
+		<div id="sectionNav">
 			<ul></ul>
 		</div>
 		<div class="mainCnt">
@@ -74,25 +68,185 @@
 				</div>
 			</div>
 
-			<div id="about2" class="section">
+			<div id="about2" class="section about1Section">
 				<div class="sectionTitle">
 					<h3>Noble Industry CEO 인사말</h3>
 				</div>
-				<div class="sectionCnt"></div>
+				<div class="sectionCnt offsetBoth">
+					<div class="profileImg">
+						<img src="../images/ceo.png" alt="">
+					</div>
+					<div class="info">
+						<div class="infoTitle">
+							<span>김기홍 대표이사</span>NOBLAND CEO	
+						</div>
+						<div class="infoCnt">
+							<p>노브랜드 홈페이지를 방문해 주셔서 갑사합니다.</p>
+							<p>노브랜드는 1994년 뉴욕 디자이너 브랜드의 니트, 우븐 의류제품의 생산을 시작으로 창업하였습니다.
+							매해 괄목할 만한 매출확장을 하며 현재는 서울 본사를 비롯하여 5개국 지사와 생산기지에 15,000명이 넘는
+							직원이 일하고 있는 굴지의 글로벌 의류생산 기업으로 성장하였습니다.</p>
+							<p>혁신과 발전을 기업 모토로 삼아 패션의 중심지 뉴욕에 디자인 센터를 두고 트렌드의 변화를 선도하고 각 바이
+							어의 요구에 부합되는 디자인을 개발하여 고객에게 최대한의 만족을 제공하고 있습니다.</p>
+							<p>의류업체로서는 선진적인 Full Service Vendor Model을 정립하여 독자적인 개발센터 운영 및 바이어의 특성
+							에 맞는 전용 생산라인을 구축하여 가장 효율적이고 도전적인 기업으로 나아가고자 합니다.</p>
+							<p>우리 노브랜드는 연구 개발에서의 비교우위와 시장의 변화에 한 발 빠르게 대응할 수 있는 유연성을 강점으로
+							하여 현재에 이르렀습니다. 추후 생산기지의 다양화와 R&D 센터에 대한 보다 적극적인 투자, 한 차원 높은 품
+							질의 제품을 생산하여 전 세계 최고의 섬유패션 기업으로 나아가겠습니다.</p>
+							<p>감사합니다.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div id="about3" class="section">
+			<div id="about3" class="section about3Section">
 				<div class="sectionTitle">
 					<h3>연혁</h3>
 				</div>
-				<div class="sectionCnt"></div>
+				<div class="sectionCnt offsetBoth">
+					<div class="tabs">
+						<ul>
+							<li><button class="tab active">1990's</button></li>
+							<li><button class="tab">2000's</button></li>
+							<li><button class="tab">2010's</button></li>
+						</ul>
+					</div>
+					<div class="wrapTabCnt">
+						<div class="tabCnt active">
+							<dl class="yearInfo">
+								<dt>1994</dt>
+								<dd>
+									㈜노브랜드 설립
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>1997</dt>
+								<dd>
+									수출 500만불 달성
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>1998</dt>
+								<dd>
+									수출 1,500만불 달성
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>1999</dt>
+								<dd>
+									수출 4,000만불 달성<br/>
+									제9회 중소기업대상 ‘산업자원부장관 수상’<br/>
+									제13회 섬유의 날 한국섬유산업연합회 주관 수출유공자부문 수상
+								</dd>
+							</dl>
+						</div>
+						<div class="tabCnt">
+							<dl class="yearInfo">
+								<dt>2001</dt>
+								<dd>
+									당사 사옥 이전<br/>
+									수출 6,000만불 달성
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>2002</dt>
+								<dd>
+									베트남 NBV 법인 설립<br/>
+									제 16회 섬유의 날 모범 경영인 부문 대통령상 수상<br/>
+									수출 8,000만불 달성
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>2003</dt>
+								<dd>
+									중소기업청, 매일경제신문 주최 [수출중소기업인상] 수상<br/>
+									수출 1억 2,000만불 달성
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>2004</dt>
+								<dd>
+									[1억불 수출의 탑] 수상
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>2005</dt>
+								<dd>
+									수출 1억 9,000만불 달성
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>2007</dt>
+								<dd>
+									인도네시아 CIPTA, SALAK 법인 설립<br/>
+									'2억불 수출의 탑 수상'
+								</dd>
+							</dl>
+						</div>
+						<div class="tabCnt">
+							<dl class="yearInfo">
+								<dt>2011</dt>
+								<dd>
+									베트남 NB VINA 준공<br/>
+									중국 법인 설립<br/>
+									우리사주조합 출범
+								</dd>
+							</dl>
+
+							<dl class="yearInfo">
+								<dt>2013</dt>
+								<dd>
+									베트남 NBV0 준공
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div id="about4" class="section">
+			<div id="about4" class="section about4">
 				<div class="sectionTitle">
 					<h3>비전</h3>
 				</div>
-				<div class="sectionCnt"></div>
+				<div class="sectionCnt offsetBoth">
+					<div class="vision">
+						<dl>
+							<dt><span class="deco">C</span>ompany <span class="deco">P</span>recepts</dt>
+							<dd>
+								<div class="proImg"><img src="../images/vision-img1.png" alt=""></div>
+								<div class="border"></div>
+								<div class="visionDesc">
+									<p>
+										작은 물이 모여 강물을 이루고<br/>
+										강물이 모여 바다라는 큰 물이 된다.<br/>
+										- NOBLAND
+									</p>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt><span class="deco">C</span>ompany <span class="deco">P</span>recepts</dt>
+							<dd>
+								<div class="proImg"><img src="../images/vision-img2.png" alt=""></div>
+								<div class="border"></div>
+								<div class="visionDesc">
+									<p>
+										인간중심의 경영과 창조적 개척정신으로<br/>
+										더불어 사는 사회의 일원이 되고 개인의 행복을 영위하는<br/>
+										모든 이들의 열린 NOBLAND입니다.
+									</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
 			</div>
 
 			<div id="about5" class="section">
