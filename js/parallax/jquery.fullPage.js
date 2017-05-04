@@ -57,6 +57,9 @@
     var SECTION_NAV_SEL =       '#' + SECTION_NAV;
     var SECTION_NAV_BREAKCUM =  "#content .breakcum ul > li.curActive";
     var SECTION_NAV_BREAKCUM_SEL =  SECTION_NAV_BREAKCUM + " dl > dd";
+    var SECTION_NAV_HEADER =    "#header .nav > li";
+    var SECTION_NAV_HEADER_SEL =SECTION_NAV_HEADER + " dl > dd";
+
     var SECTION_NAV_TOOLTIP =   'fp-tooltip';
     var SECTION_NAV_TOOLTIP_SEL='.'+SECTION_NAV_TOOLTIP;
     var SHOW_ACTIVE_TOOLTIP =   'fp-show-active';
@@ -597,6 +600,9 @@
 
                 //Scrolls to the section when clicking the breakcum option
                 .on('click touchstart', SECTION_NAV_BREAKCUM_SEL + ' a', sectionBulletHandler)
+
+                //Scrolls to the section when clicking the header menu
+                .on('click touchstart', SECTION_NAV_HEADER_SEL + ' a', sectionBulletHandler)
 
                 //Scrolls the slider to the given slide destination for the given section
                 .on('click touchstart', SLIDES_NAV_LINK_SEL, slideBulletHandler)

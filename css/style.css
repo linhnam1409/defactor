@@ -46,7 +46,7 @@ html, body, .global {height: 100%;}
 	#header .menu {display: none;}
 }
 
-#header .nav {position: fixed; right: -100%; height: 100%; width: 50%; min-width: 250px; text-align: left; background: #333; transition: right 1s cubic-bezier(0.42, 0, 0.05, 1.04); box-sizing: border-box; line-height: 48px;}
+#header .nav {position: fixed; right: -100%; height: 100%; width: 50%; min-width: 250px; text-align: left; background: #333; transition: right 1s cubic-bezier(0.42, 0, 0.05, 1.04); box-sizing: border-box; line-height: 48px; overflow: auto;}
 #header #chkShowNav:checked + .nav {right:0;}
 #header .nav > li.gapNav {height: 56px; border-bottom: 1px solid #222; margin-bottom: 20px;}
 #header .nav > li.lang {text-align: center; font-size: 0;}
@@ -59,7 +59,7 @@ html, body, .global {height: 100%;}
 #header .nav > li dl.subNav > dt {display: none;}
 #header .nav > li dl.subNav > dd > a {color: #9e9e9e; letter-spacing: 1px; display: block;}
 @media (min-width: 1025px){
-	#header .nav {position: static; width: 80%; margin: 0 auto; padding-left: 150px; background: transparent;}
+	#header .nav {position: static; width: 80%; margin: 0 auto; padding-left: 150px; background: transparent; overflow: inherit;}
 	#header .nav > li {float: left; position: relative;}
 	#header .nav > li.gapNav {display: none;}
 	#header .nav > li.lang {display: none;}
@@ -74,7 +74,7 @@ html, body, .global {height: 100%;}
 
 /* #cotnent */
 #content {padding-top: 56px; min-height: 100%; margin-bottom: -53px; box-sizing: border-box;}
-#content .breakcum {background: #575564; position: fixed; width: 100%; z-index: 200;}
+#content .breakcum {background: #575564; position: fixed; width: 100%; z-index: 150;}
 #content .breakcum ul {height: 40px; font-size: 70%;}
 #content .breakcum ul > li {border-left: 1px solid #4a4858; float: left; line-height: 40px; box-sizing: border-box;}
 #content .breakcum ul > li p, #content .breakcum ul > li.curActive > dl > dd a {color: #fff; padding-left: 10px; box-sizing: border-box;}
@@ -85,9 +85,9 @@ html, body, .global {height: 100%;}
 #content .breakcum ul > li.pageName p {text-transform: uppercase;}
 #content .breakcum ul > li.curActive {width: 55%;}
 #content .breakcum ul > li.curActive > p.curActivePage {}
-#content .breakcum ul > li.curActive > dl {display: none; background: #575564; position: absolute;}
+#content .breakcum ul > li.curActive > dl {display: none; background: #575564; position: absolute; width: 200px;}
 #content .breakcum ul > li.curActive > dl > dd {border-top: 1px solid #4a4858; box-sizing: border-box;}
-#content .breakcum ul > li.curActive > dl > dd > a {color:#fff;}
+#content .breakcum ul > li.curActive > dl > dd > a {color:#fff; display: block;}
 #content .mainCnt {padding-top: 40px;}
 
 /* #footer */

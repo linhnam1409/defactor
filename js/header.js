@@ -23,7 +23,7 @@ function header(){
 	header += "			<a href='#' onclick='fnShowSubNav(this);'>{{nav.navTitle}}</a>";
 	header += "			<dl class='subNav'>";
 	header += "				<dt>{{nav.navTitle}}</dt>";
-	header += "				<dd ng-repeat='navDep1 in nav.navDep1s'><a href='{{navDep1.depUrl}}'>{{navDep1.depTitle}}</a></dd>";
+	header += "				<dd ng-repeat='navDep1 in nav.navDep1s'><a href='#'>{{navDep1.depTitle}}</a></dd>";
 	header += "			</dl>";
 	header += "			<div class='navBg'></div>";
 	header += "		</li>";
