@@ -602,7 +602,7 @@
                 .on('click touchstart', SECTION_NAV_BREAKCUM_SEL + ' a', sectionBulletHandler)
 
                 //Scrolls to the section when clicking the header menu
-                .on('click touchstart', SECTION_NAV_HEADER_SEL + ' a', sectionBulletHandler)
+                .on('click touchstart', SECTION_NAV_HEADER_SEL + ' a', sectionBulletHandlerHeader)
 
                 //Scrolls the slider to the given slide destination for the given section
                 .on('click touchstart', SLIDES_NAV_LINK_SEL, slideBulletHandler)
@@ -1861,10 +1861,17 @@
             controlPressed = false;
         }
 
-        //Scrolls to the section when clicking the navigation bullet
+        //Scrolls to the section when clicking the navigation bullet / breakcum option
         function sectionBulletHandler(e){
             e.preventDefault();
             var index = $(this).parent().index();
+            scrollPage($(SECTION_SEL).eq(index));
+        }
+
+        //Scrolls to the section when clicking the header navigation 
+        function sectionBulletHandlerHeader(e){
+            e.preventDefault();
+            var index = $(this).parent().index()-1;
             scrollPage($(SECTION_SEL).eq(index));
         }
 
