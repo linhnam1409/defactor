@@ -45,7 +45,7 @@
     var SECTION_ACTIVE_SEL =    SECTION_SEL + ACTIVE_SEL;
     var SECTION_FIRST_SEL =     SECTION_SEL + ':first';
     var SECTION_LAST_SEL =      SECTION_SEL + ':last';
-    var TABLE_CELL =            'fp-tableCell';
+    var TABLE_CELL =            'fp-tableCell fp-center';
     var TABLE_CELL_SEL =        '.' + TABLE_CELL;
     var AUTO_HEIGHT =           'fp-auto-height';
     var AUTO_HEIGHT_SEL =       '.fp-auto-height';
