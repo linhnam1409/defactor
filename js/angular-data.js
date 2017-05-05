@@ -42,9 +42,30 @@ app.controller("controller",function($scope){
 		]}
 	]
 
-	$scope.fnCurActPage = function(v){
-		$scope.curActPage= v;
-	}
-
-	
+	$scope.nationals = [
+		{"ntnTitle":"Seoul, KOREA","ntnClass":"korea","ntnInfo":[
+			"Headquarter",
+			"R&D, Sample Room",
+			"Design House, Show Room"
+		]},
+		{"ntnTitle":"Hochiminh, VIETNAM(Own)","ntnClass":"vietnam","ntnInfo":[
+			"Total Owned 76 lines, 2.8mil/month",
+			" - Knit 60 lines, 2.3mil/month",
+			" - Woven 16lines, 0.5mil/month",
+			" - Direct Employee 5,550"
+		]},
+		{"ntnTitle":"Shanghai, CHINA","ntnClass":"china","ntnInfo":[
+			"Fabric and Trim Sourcing",
+			"Fabric Inspection"
+		]},
+		{"ntnTitle":"New York, USA","ntnClass":"usa","ntnInfo":[
+			"Servicing East Coast Customers"
+		]},
+		{"ntnTitle":"Sukabumi, INDONESIA(Own)","ntnClass":"indo","ntnInfo":[
+			"Total Owned 94 lines, 0.4mil/month",
+			" - Knit 54 lines, 2.9mil/month",
+			" - Woven 40 lines, 1.3mil/month",
+			" - Direct Employee 7,100"
+		]}
+	]
 });

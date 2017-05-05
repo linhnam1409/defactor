@@ -88,11 +88,12 @@ function fnShowSubNav(e){
 /* tabs */
 function fnChangeTabs(){
 	$(document).on("click",".tab",function(){
-		var li = $(".tabs ul li");
+		var li = $(this).parent().parent().find("li");
 		var idx = $(this).parent().index();
-		$(".wrapTabCnt .tabCnt").removeClass("active");
-		$(".wrapTabCnt .tabCnt").eq(idx).addClass("active");
-		$(".tab").removeClass("active");
+		console.log(idx);
+		$(this).parent().parent().parent().parent().find(".wrapTabCnt .tabCnt").removeClass("active");
+		$(this).parent().parent().parent().parent().find(".wrapTabCnt .tabCnt").eq(idx).addClass("active");
+		$(this).parent().parent().find(".tab").removeClass("active");
 		li.eq(idx).find(".tab").addClass("active");
 	});
 }
