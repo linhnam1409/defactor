@@ -173,11 +173,12 @@ html, body, .global {height: 100%;}
 	.about5Section .sectionCnt .about5ProImgFull img {width: 70%; max-width: 900px; margin: auto; display: block;}
 	.about5Section .sectionCnt .about5ProImgMobile {display: none;}
 }
+
 /*** R&D Center ***/
-.center1Section{background: url('../images/background1.png') no-repeat 100% 100%; background-size: cover; /*height: 708px!important;*/ padding-top: 40px!important; }
-.center2Section{background: url('../images/background2.png') no-repeat 100% 100%; background-size: cover; padding-top: 39px!important; }
-.center3Section{background: url('../images/background3.png') no-repeat 100% 90%; background-size: cover; padding-top: 39px!important; }
-.center4Section{background: url('../images/background4.png') no-repeat 100% 100%; background-size: cover; padding-top: 40px!important; }
+.center1Section{background: url('../images/background1.png') no-repeat 100% 100%; background-size: cover; /*height: 708px!important;*/ }
+.center2Section{background: url('../images/background2.png') no-repeat 100% 100%; background-size: cover; }
+.center3Section{background: url('../images/background3.png') no-repeat 100% 90%; background-size: cover; }
+.center4Section{background: url('../images/background4.png') no-repeat 100% 100%; background-size: cover; }
 .section .sectionLine{border-bottom: none!important; background-color: rgba(45, 42, 61, 0.6); box-sizing: border-box; }
 .section .sectionLine h3 {text-align: center; line-height: 90px; color: #fff; font-size: 24px; }
 .center1Section .sectionContent{padding: 15% 15%; }
@@ -190,6 +191,7 @@ html, body, .global {height: 100%;}
 .center4Section .sectionContent{padding: 15% 15%; }
 .center_filter{background-color: rgba(34, 34, 34, 0.502); z-index: 5; height: 100%; width: 100%; }
 .section .section_footer{}
+
 .section .sectionLine h3 {
     text-align: center;
     line-height: 90px;
@@ -264,6 +266,5 @@ html, body, .global {height: 100%;}
 		width: 100%;
 	}
 }
-
 
 
