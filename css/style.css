@@ -200,7 +200,7 @@ html, body, .global {height: 100%;}
     font-size: 24px;
 }
 .center1Section .sectionContent{
-	padding: 15% 15%;
+	padding: 13% 15%;
 }
 .center1Section .sectionContent p{
 	color: #fff;
@@ -208,7 +208,7 @@ html, body, .global {height: 100%;}
 	line-height: 25px;
 }
 .center2Section .sectionContent{
-	padding: 15% 15%;
+	padding: 13% 15%;
 }
 .center2Section .sectionContent p{
 	color: #fff;
@@ -216,7 +216,7 @@ html, body, .global {height: 100%;}
 	line-height: 25px;
 }
 .center3Section .sectionContent{
-	padding: 15% 15%;
+	padding: 13% 15%;
 }
 .center3Section .sectionContent p{
 	color: #fff;
@@ -229,7 +229,7 @@ html, body, .global {height: 100%;}
 	line-height: 25px;
 }
 .center4Section .sectionContent{
-	padding: 15% 15%;
+	padding: 13% 15%;
 }
 .center_filter{
 	background-color: rgba(34, 34, 34, 0.502);
@@ -251,3 +251,19 @@ html, body, .global {height: 100%;}
 .center4Section .fp-center{
 	height: 680px!important;
 }*/
+@media (min-width: 768px){
+		.center_filter{
+		background-color: rgba(34, 34, 34, 0.502);
+		z-index: 5;
+		height: 924px;
+		width: 100%;
+	}
+}
+@media (min-width: 1920px){
+		.center_filter{
+		background-color: rgba(34, 34, 34, 0.502);
+		z-index: 5;
+		height: 1040px;
+		width: 100%;
+	}
+}
