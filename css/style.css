@@ -165,3 +165,65 @@ html, body, .global {height: 100%;}
 	.about4Section .sectionCnt .vision dl:first-child {float: left;}
 	.about4Section .sectionCnt .vision dl:last-child {float: right;}
 }
+/*** R&D Center ***/
+.background1Section{
+	background: url('../images/background1.png') no-repeat 100% 100%;
+
+	width: 100%;
+}
+.background2Section{
+	background: url('../images/background2.png') no-repeat 100% 100%;
+	background-size: cover;
+}
+.background3Section{
+	background: url('../images/background3.png') no-repeat 100% 100%;
+	background-size: cover;
+}
+.background4Section{
+	background: url('../images/background4.png') no-repeat 100% 100%;
+	background-size: cover;
+}
+.section .sectionLine{
+	border-bottom: none!important;
+	background-color: rgba(45, 42, 61, 0.6);
+	box-sizing: border-box;
+
+}
+.section .sectionLine h3 {
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    font-size: 24px;
+}
+.about1Section .sectionContent{
+	padding: 15% 15%;
+}
+.about1Section .sectionContent p{
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+}
+.about3Section .sectionContent{
+	padding: 15% 15%;
+}
+.about3Section .sectionContent p{
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+}
+.about4 .sectionContent p{
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+}
+.about4 .sectionContent{
+	padding: 15% 15%;
+}
+.section .background_filter{
+	background-color: rgba(34, 34, 34, 0.502);
+	z-index: 5;
+	height: 100%;
+	width: 100%;
+}
+.section .section_footer{
+}
