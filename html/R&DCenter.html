@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>R&D Center</title>
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/library.js"></script>
+	<script>insertLib();</script>
+</head>
+<body ng-app="app">
+<div class="global" ng-controller="controller">
+	<!-- #header -->
+	<script>header();</script>
+	<!-- #header:E -->
+
+	<!-- #content -->
+	<div id="content">
+		<div class="breakcum">
+			<ul class="offsetBoth">
+				<li><a href="#"><img src="../images/ico-home.png" alt=""></a></li>
+				<li class="pageName"><p>R&D Center</p></li>
+				<li class="curActive">
+					<p class="curActivePage" onclick="$(this).next().slideToggle();">Design</p>
+					<dl ng-repeat="nav in navs | filter: {'navTitle':'R&D Center'}">
+						<dd ng-repeat="dep1 in nav.navDep1s"><a href="#"  onclick="$('.curActivePage').text($(this).text()); $('.curActive dl').slideUp();">{{dep1.depTitle}}</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+
+		<div id="sectionNav">
+			<ul></ul>
+		</div>
+		<div class="mainCnt">
+			<div class="section center1Section">
+				<div class="center_filter">
+					<div class="sectionTitle sectionLine">
+						<h3>Design</h3>
+					</div>
+					<div class="sectionCnt offsetBoth sectionContent">
+						<p>By traveling seasonally to Europe and U.S, We analyze and understand market trend to present</p>
+						<p>most innovative and fashion-foward and print artwork for each customer's need.</p>
+					</div>
+				</div>
+				<div class="section_footer">
+
+				</div>
+			</div>
+
+			<div class="section center2Section">
+				<div class="center_filter">
+					<div class="sectionTitle sectionLine">
+						<h3>Fabric R&D</h3>
+					</div>
+					<div class="sectionCnt offsetBoth sectionContent">
+						<p>By utilizing vertical mills and internal fabric library,</p>
+						<p>we source & develop most up-to-date fabric</p>
+						<p>qualities to present to our customers</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section center3Section">
+				<div class="center_filter">
+					<div class="sectionTitle sectionLine">
+						<h3>LAB & Washing</h3>
+					</div>
+					<div class="sectionCnt offsetBoth sectionContent">
+						<p>Our certified testing lab provides accurate and reliable testing results.</p>
+						<p>We are also proud to present innovative seasonal washing developments.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section center4Section">
+				<div class="center_filter">
+					<div class="sectionTitle sectionLine">
+						<h3>New York R&D</h3>
+					</div>
+					<div class="sectionCnt offsetBoth sectionContent">
+						<p>Our New York R&D gives updates to most current trend and</p>
+						<p>provides convenient service to our U.S customers</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- #content:E -->
+
+	<!-- #footer -->
+	<script>footer();</script>
+	<!-- #footer:E -->
+</div>
+</body>
+</html>

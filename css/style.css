@@ -166,22 +166,26 @@ html, body, .global {height: 100%;}
 	.about4Section .sectionCnt .vision dl:last-child {float: right;}
 }
 /*** R&D Center ***/
-.background1Section{
+.center1Section{
 	background: url('../images/background1.png') no-repeat 100% 100%;
-
-	width: 100%;
+	background-size: cover;
+	/*height: 708px!important;*/
+	padding-top: 40px!important;
 }
-.background2Section{
+.center2Section{
 	background: url('../images/background2.png') no-repeat 100% 100%;
 	background-size: cover;
+	padding-top: 39px!important;
 }
-.background3Section{
-	background: url('../images/background3.png') no-repeat 100% 100%;
+.center3Section{
+	background: url('../images/background3.png') no-repeat 100% 90%;
 	background-size: cover;
+	padding-top: 39px!important;
 }
-.background4Section{
+.center4Section{
 	background: url('../images/background4.png') no-repeat 100% 100%;
 	background-size: cover;
+	padding-top: 40px!important;
 }
 .section .sectionLine{
 	border-bottom: none!important;
@@ -195,31 +199,39 @@ html, body, .global {height: 100%;}
     color: #fff;
     font-size: 24px;
 }
-.about1Section .sectionContent{
+.center1Section .sectionContent{
 	padding: 15% 15%;
 }
-.about1Section .sectionContent p{
+.center1Section .sectionContent p{
 	color: #fff;
 	text-align: center;
 	line-height: 25px;
 }
-.about3Section .sectionContent{
+.center2Section .sectionContent{
 	padding: 15% 15%;
 }
-.about3Section .sectionContent p{
+.center2Section .sectionContent p{
 	color: #fff;
 	text-align: center;
 	line-height: 25px;
 }
-.about4 .sectionContent p{
+.center3Section .sectionContent{
+	padding: 15% 15%;
+}
+.center3Section .sectionContent p{
 	color: #fff;
 	text-align: center;
 	line-height: 25px;
 }
-.about4 .sectionContent{
+.center4Section .sectionContent p{
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+}
+.center4Section .sectionContent{
 	padding: 15% 15%;
 }
-.section .background_filter{
+.center_filter{
 	background-color: rgba(34, 34, 34, 0.502);
 	z-index: 5;
 	height: 100%;
@@ -227,3 +239,15 @@ html, body, .global {height: 100%;}
 }
 .section .section_footer{
 }
+/*.center1Section .fp-center{
+	height: 680px!important;
+}
+.center2Section .fp-center{
+	height: 680px!important;
+}
+.center3Section .fp-center{
+	height: 680px!important;
+}
+.center4Section .fp-center{
+	height: 680px!important;
+}*/
